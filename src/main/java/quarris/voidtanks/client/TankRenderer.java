@@ -138,6 +138,6 @@ public class TankRenderer extends TileEntityRenderer<TankTile> {
     private TextureAtlasSprite getFluidFlowingSprite(FluidAttributes attributes, FluidStack fluidStack) {
         return Minecraft.getInstance()
                 .getAtlasSpriteGetter(PlayerContainer.LOCATION_BLOCKS_TEXTURE)
-                .apply(attributes.getStillTexture(fluidStack));
+                .apply(attributes.getFlowingTexture(fluidStack));
     }
 }
